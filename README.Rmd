@@ -82,10 +82,9 @@ dplyr::mutate(
 ```{r}
 pasta <- "pratica/"
 
-
 knitr::kable(
   tibble::tibble(
-    script = list.files(pasta, pattern = "\\.R$"),
+    script = list.files(pasta, pattern = "\\.zip$"),
     link = paste0(
       "https://raw.githubusercontent.com/curso-r/",
       params$turma,

@@ -29,8 +29,9 @@ Fora do horário de aula ou monitoria:
 
 ## Scripts utilizados em aula
 
-| script |
-|:-------|
+| script                                                                                                       |
+|:-------------------------------------------------------------------------------------------------------------|
+| [01-modulos.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//01-modulos.zip) |
 
 ## Redes sociais da Curso-R
 
