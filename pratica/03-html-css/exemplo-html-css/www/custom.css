@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+a {
+  color: green;
+}
+
+img {
+  border: 10px dotted orange;
+}
+
+h1 {
+ font-family: 'Sofia', cursive;
+}
+
+.fundo-amarelo {
+  background-color: yellow;
+}
+
+.fundo-azul {
+  background-color: blue;
+}
+
+.letra-branca {
+  color: white;
+}
+
+.centralizar-texto {
+  text-align: center;
+}
+
+#div-com-fundo-amarelo {
+  background-color: yellow;
+}
+
+p {
+  color: purple;
+}

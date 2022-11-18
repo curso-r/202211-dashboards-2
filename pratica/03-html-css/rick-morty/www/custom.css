@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'get schwifty';
+  src: url('get_schwifty.ttf')  format('truetype');
+}
+
+body {
+  background: url("espaco.jpg");
+}
+
+h1 {
+  color: white;
+  font-family: "get schwifty", serif;
+}
+
