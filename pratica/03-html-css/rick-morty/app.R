@@ -12,6 +12,9 @@ ui <- fluidPage(
   ),
   h1("Rick and Morty"),
   hr(),
+  div(
+    img(src = "rick.png", id = "rick")
+  ),
   fluidRow(
     column(
       width = 4,
@@ -23,11 +26,14 @@ ui <- fluidPage(
     )
   ),
   fluidRow(
-    column(
-      width = 10,
-      offset = 2,
-      echarts4rOutput("grafico")
-    )
+      column(
+        width = 10,
+        offset = 2,
+        div(
+          class = "areaPlot",
+          echarts4rOutput("grafico", height = "600px")
+        )
+      )
   )
 )
 
@@ -42,11 +48,24 @@ server <- function(input, output, session) {
       dplyr::arrange(desc(num_dentro_temporada)) |>
       e_chart(x = qtd_espectadores_EUA, reorder = FALSE) |>
       e_bar(serie = titulo) |>
-      e_y_axis(type = "category") |>
+      e_y_axis_(
+        type = "category",
+        axisLabel = list(color = "white")
+      ) |>
+      e_x_axis(
+        name = "Número de espectadores (milhões)",
+        axisLabel = list(color = "white"),
+        nameTextStyle = list(
+          color = "white", fontSize = 16
+        ),
+        nameLocation = "center",
+        nameGap = 30
+      ) |>
       e_grid(
         containLabel = TRUE
       ) |>
-      e_legend(show = FALSE)
+      e_legend(show = FALSE) |>
+      e_color("#08acc6")
   })
 
 }
