@@ -28,14 +28,16 @@ Fora do horário de aula ou monitoria:
 | [02-modulos.html](https://curso-r.github.io/main-dashboards-2/slides/02-modulos.html)                         | [02-modulos.pdf](https://curso-r.github.io/main-dashboards-2/slides/02-modulos.pdf)                         |
 | [03-golem.html](https://curso-r.github.io/main-dashboards-2/slides/03-golem.html)                             | [03-golem.pdf](https://curso-r.github.io/main-dashboards-2/slides/03-golem.pdf)                             |
 | [04-html-css.html](https://curso-r.github.io/main-dashboards-2/slides/04-html-css.html)                       | [04-html-css.pdf](https://curso-r.github.io/main-dashboards-2/slides/04-html-css.pdf)                       |
+| [05-htmlwidgets.html](https://curso-r.github.io/main-dashboards-2/slides/05-htmlwidgets.html)                 | [05-htmlwidgets.pdf](https://curso-r.github.io/main-dashboards-2/slides/05-htmlwidgets.pdf)                 |
 
 ## Scripts utilizados em aula
 
-| script                                                                                                         |
-|:---------------------------------------------------------------------------------------------------------------|
-| [01-modulos.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//01-modulos.zip)   |
-| [02-golem.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//02-golem.zip)       |
-| [03-html-css.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//03-html-css.zip) |
+| script                                                                                                               |
+|:---------------------------------------------------------------------------------------------------------------------|
+| [01-modulos.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//01-modulos.zip)         |
+| [02-golem.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//02-golem.zip)             |
+| [03-html-css.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//03-html-css.zip)       |
+| [04-htmlwidgets.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//04-htmlwidgets.zip) |
 
 ## Redes sociais da Curso-R
 
