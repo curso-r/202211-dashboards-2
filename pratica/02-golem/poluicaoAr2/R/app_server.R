@@ -7,5 +7,6 @@
 app_server <- function(input, output, session) {
 
   mod_serie_historica_server("serie_historica_1")
+  mod_mapa_estacao_server("mapa_estacao_1")
 
 }

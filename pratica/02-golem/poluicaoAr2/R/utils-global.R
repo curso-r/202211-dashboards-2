@@ -1,0 +1,11 @@
+utils::globalVariables(c(
+  "concentracao",
+  "data",
+  "estacao_cetesb",
+  "lat",
+  "long",
+  "media",
+  "poluente",
+  "x",
+  "y"
+))

@@ -10,12 +10,12 @@
 mod_serie_historica_ui <- function(id){
   ns <- NS(id)
   tagList(
-    h1("Poluição do ar na Grande São Paulo"),
+    h1("Polui\u00E7\u00E3o do ar na Grande S\u00E3o Paulo"),
     sidebarLayout(
       sidebarPanel(
         selectInput(
           inputId = ns("estacao"),
-          label = "Selecione uma estação",
+          label = "Selecione uma esta\u00E7\u00E3o",
           choices = unique(cetesb$estacao_cetesb)
         ),
         selectInput(
@@ -39,7 +39,7 @@ mod_serie_historica_server <- function(id){
     ns <- session$ns
 
     observe({
-      opcoes <- cetesb |>
+      opcoes <- poluicaoAr2::cetesb |>
         dplyr::filter(estacao_cetesb == input$estacao) |>
         dplyr::pull(poluente) |>
         unique()
@@ -53,7 +53,7 @@ mod_serie_historica_server <- function(id){
 
     output$grafico <- echarts4r::renderEcharts4r({
 
-      cetesb |>
+      poluicaoAr2::cetesb |>
         dplyr::filter(
           estacao_cetesb == input$estacao,
           poluente == input$poluente

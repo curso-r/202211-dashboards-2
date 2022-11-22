@@ -2,6 +2,7 @@
 #'
 #' @param ... arguments to pass to golem_opts.
 #' See `?golem::get_golem_options` for more details.
+#' @param options list of options
 #' @inheritParams shiny::shinyApp
 #'
 #' @export

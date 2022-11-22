@@ -10,14 +10,14 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     navbarPage(
-      title = "Poluição do ar",
+      title = "Polui\u00E7\u00E3o do ar",
       tabPanel(
-        "Série histórica",
+        "S\u00E9rie hist\u00F3rica",
         mod_serie_historica_ui("serie_historica_1")
       ),
       tabPanel(
-        "Mapa das estações",
-        "..."
+        "Mapa das esta\u00E7\u00F5es",
+        mod_mapa_estacao_ui("mapa_estacao_1")
       )
     )
   )
