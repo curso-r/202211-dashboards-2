@@ -10,16 +10,7 @@
 mod_plotly_ui <- function(id){
   ns <- NS(id)
   tagList(
-
-    fluidRow(
-      column(
-        selectInput(
-          ns("ano"), "Selecione um ano",
-          unique(pnud::pnud$ano)
-        ),
-        width = 4
-      )
-    ),
+    mod_filtro_ano_ui("filtro_ano_1"),
     fluidRow(
       column(
         width = 8,
@@ -48,16 +39,9 @@ mod_plotly_ui <- function(id){
 #' plotly Server Functions
 #'
 #' @noRd
-mod_plotly_server <- function(id){
+mod_plotly_server <- function(id, con, pnud_filtrado){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
-
-    pnud_filtrado <- shiny::reactive({
-
-      pnud::pnud |>
-        dplyr::filter(ano == input$ano)
-
-    })
 
     output$grafico <- plotly::renderPlotly({
 
