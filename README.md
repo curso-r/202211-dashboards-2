@@ -40,6 +40,7 @@ Fora do horário de aula ou monitoria:
 | [03-html-css.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//03-html-css.zip)       |
 | [04-htmlwidgets.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//04-htmlwidgets.zip) |
 | [05-reatividade.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//05-reatividade.zip) |
+| [06-extra.zip](https://raw.githubusercontent.com/curso-r/202211-dashboards-2/main/pratica//06-extra.zip)             |
 
 ## Redes sociais da Curso-R
 
