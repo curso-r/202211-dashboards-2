@@ -1,0 +1,36 @@
+---
+title: "Análise PNUD"
+output: pagedreport::paged_windmill
+date: "2022-11-28"
+params:
+  ano_selecionado: 2010
+  bd: NULL
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+O gráfico abaixo mostra a relação entre IDH e renda a partir dos dados do ano de `r params$ano_selecionado`.
+
+
+```{r}
+#| fig.width: 6
+#| fig.height: 5
+#| echo: false
+
+if (!is.null(params$bd)) {
+  params$bd |> 
+  ggplot2::ggplot(ggplot2::aes(idhm, rdpc, colour = gini)) +
+  ggplot2::geom_point() +
+  ggthemes::theme_hc() +
+  ggplot2::labs(
+    title = "A relação entre IDH e Renda",
+    x = "IDH Municipal",
+    y = "Renda percapita",
+    colour = "Índice de Gini"
+  )
+}
+
+```
+
